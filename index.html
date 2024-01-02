@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usakula Storage Monitor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <img src="Usakula Logo.png" alt="Logo" width="500" height="400">
+        <h1>Real-time Storage Monitor</h1>
+        <p>Usakula is your dedicated storage protection partner, ensuring the optimal conditions for your stored goods. By leveraging advanced technology, Usakula monitors temperature and humidity, providing real-time predictions to safeguard your stored items. Whether it's grains, produce, or valuables, Usakula empowers you to maintain the perfect storage environment, ensuring product quality and longevity. Experience peace of mind as Usakula detects deviations, alerts you promptly, and recommends tailored actions for a proactive approach to storage management. Usakula is your ally in preserving the integrity of your stored items, offering a seamless blend of innovation and convenience.</p>
+        <form id="predictionForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="storageNeeds">Storage Needs:</label>
+            <input type="text" id="storageNeeds" name="storageNeeds" required>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" pattern="[0-9]{10}" required>
+
+            <button type="button" onclick="submitForm()">Get Prediction</button>
+        </form>
+
+        <div id="predictionResult"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
